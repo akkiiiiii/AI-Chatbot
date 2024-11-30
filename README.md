@@ -53,10 +53,6 @@ Changing the UI
 Modify the layouts in the res/layout directory to tweak the chat bubble design or add new features.
 Future Enhancements
 
-🌟 Natural Language Processing (NLP): Integrate NLP libraries for smarter, context-aware responses.
-🌐 Multilingual Support: Enable responses in multiple languages.
-🔊 Voice Input: Allow users to speak their queries instead of typing.
-💾 Persistence: Save chat history locally or on the cloud.
 Contributing
 
 We’d love your contributions to make ChatEase even better! Feel free to:
