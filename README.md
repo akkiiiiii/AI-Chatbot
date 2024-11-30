@@ -1,4 +1,4 @@
-ChatEase - Your Personalized Android Chatbot App
+AIChatbot - Your Personalized Android Chatbot App
 
 Welcome to ChatEase, an intelligent and stylish chatbot application for Android! This app combines conversational AI with a sleek, WhatsApp-style interface to create a fun and intuitive user experience. Whether you're looking for instant answers, a quick chat, or even a companion to keep you entertained, ChatEase has got you covered!
 
@@ -76,4 +76,4 @@ Got questions or feedback? Feel free to reach out:
 
 
 GitHub: akkiiiiii
-Start chatting with ChatEase today and experience the future of AI-powered conversations! 😊
+Start chatting with AIChatbot today and experience the future of AI-powered conversations! 😊
