@@ -41,7 +41,7 @@ HashMap: Efficient storage for predefined responses.
 Installation
 
 Clone this repository:
-git clone https://github.com/your-username/ChatEase.git
+git clone https://github.com/akkiiiiii/ChatEase.git
 Open the project in Android Studio.
 Build and run the app on an emulator or a physical device.
 How to Customize
