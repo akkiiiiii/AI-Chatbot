@@ -1,10 +1,10 @@
 package night.owl.aichatbot;
 
-public class Message {
+public class ChatMessage {
     private String message;
-    private boolean isUser; // true for user, false for bot
+    private boolean isUser;
 
-    public Message(String message, boolean isUser) {
+    public ChatMessage(String message, boolean isUser) {
         this.message = message;
         this.isUser = isUser;
     }
@@ -17,3 +17,4 @@ public class Message {
         return isUser;
     }
 }
+

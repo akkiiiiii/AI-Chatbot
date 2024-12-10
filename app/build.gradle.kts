@@ -44,6 +44,7 @@ dependencies {
     implementation(libs.gson)
 //    implementation(libs.google.cloud.dialogflow)
 
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

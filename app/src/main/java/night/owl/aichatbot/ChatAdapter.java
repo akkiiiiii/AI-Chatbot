@@ -13,9 +13,9 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int USER_MESSAGE = 1;
     private static final int BOT_MESSAGE = 2;
 
-    private List<Message> messageList;
+    private List<ChatMessage> messageList;
 
-    public ChatAdapter(List<Message> messageList) {
+    public ChatAdapter(List<ChatMessage> messageList) {
         this.messageList = messageList;
     }
 
@@ -40,7 +40,7 @@ public class ChatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        Message message = messageList.get(position);
+        ChatMessage message = messageList.get(position);
         if (holder instanceof UserMessageViewHolder) {
             ((UserMessageViewHolder) holder).userMessage.setText(message.getMessage());
         } else if (holder instanceof BotMessageViewHolder) {
