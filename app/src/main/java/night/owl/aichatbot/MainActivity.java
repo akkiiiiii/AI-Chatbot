@@ -63,37 +63,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String userMessage = inputMessage.getText().toString();
                 if (!userMessage.isEmpty()) {
-//                    messageList.add(new Message(userMessage, true)); // User message
-//                    messageList.add(new Message(getBotResponse(userMessage), false)); // Bot response
-
 
                     addMessageToChat(new ChatMessage(userMessage, true));
-                    callGeminiAPI(userMessage);
+                    callAWSAPI(userMessage);
 
-//                    chatAdapter.notifyDataSetChanged();
-//                    chatRecyclerView.smoothScrollToPosition(messageList.size() - 1);
                     inputMessage.setText("");
                 }
             }
         });
     }
 
-    private String getBotResponse(String query) {
-        // Simple response logic (replace with your predefined responses)
-
-        AIChatbot chatbot = new AIChatbot();
-
-
-        return chatbot.getResponse(query);
-    }
-
-
+//    private String getBotResponse(String query) {
+//        // Simple response logic (replace with your predefined responses)
+//
+//        AIChatbot chatbot = new AIChatbot();
+//
+//
+//        return chatbot.getResponse(query);
+//    }
 
 
-    public void callGeminiAPI(String query) {
-        // Define the API key and endpoint
-        String apiKey = "YOUR_API_KEY"; // Replace with your actual API key
-        String url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=";
+
+    public void callAWSAPI(String query) {
+
+
+        String url = getString(R.string.awsApi);
 
         // Create the JSON payload
         String jsonPayload = "{\n" +
@@ -120,18 +114,6 @@ public class MainActivity extends AppCompatActivity {
         new Thread(() -> {
             try {
                 Response responseBody = client.newCall(request).execute();
-//                if (response.isSuccessful()) {
-//                    // Process the response
-//
-//
-//                    String responseBody = response.body().string();
-//
-//                    runOnUiThread(() -> {
-//                        Log.d("message", responseBody);
-//                        // Update your UI with the response
-//                        addMessageToChat(new ChatMessage(responseBody, false));
-//                    });
-//                }
 
                 String response =  responseBody.body().string();
 

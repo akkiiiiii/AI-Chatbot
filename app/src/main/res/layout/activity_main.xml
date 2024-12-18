@@ -17,10 +17,6 @@
     <!-- User Input Section -->
 
     <androidx.cardview.widget.CardView
-        app:cardCornerRadius="3dp"
-        app:cardElevation="3dp"
-        app:cardPreventCornerOverlap="true"
-        app:cardUseCompatPadding="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -39,7 +35,7 @@
                 android:layout_weight="1"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
-                android:hint="Type your message here"
+                android:hint="Hey How May I Assist You?"
                 android:background="@drawable/edittext_rounded"
                 android:padding="10dp"
                 android:textSize="16sp" />

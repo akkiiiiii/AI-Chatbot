@@ -39,11 +39,8 @@ dependencies {
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     // For making HTTP requests (if using a REST API)
-    implementation(libs.retrofit)
     implementation(libs.converter.gson)
     implementation(libs.gson)
-//    implementation(libs.google.cloud.dialogflow)
-
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
 
     androidTestImplementation(libs.ext.junit)
